@@ -1,0 +1,157 @@
+@import './global.scss';
+
+.goodFace__slider {
+  padding: 120px 0 0 0;
+}
+.goodFace__slider-top {
+  margin-bottom: 72px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    height: 2px;
+    background: #000;
+    width: 100vw;
+    z-index: -1;
+  }
+}
+.slider-top__item {
+  img {
+    margin: 8px 0;
+    width: 56px;
+    height: 56px;
+    transition: 0.3s ease 0s;
+  }
+  p {
+    font-size: 13px;
+    line-height: 26px;
+  }
+}
+.slick-current {
+  img {
+    margin: 0;
+    width: 72px;
+    height: 72px;
+  }
+}
+.slick-track {
+  display: flex;
+}
+.slick-list {
+  overflow: hidden;
+}
+.slick-arrow {
+  position: absolute;
+  top: 8px;
+  right: 1px;
+  font-size: 0;
+  width: 56px;
+  height: 56px;
+  border: 2px solid #14171A;
+  background: #fff;
+  z-index: 10;
+  transition: .3s ease 0s;
+}
+.slick-prev,
+.slick-next {
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    left: 40%;
+    width: 14px;
+    height: 3px;
+    background: #14171A;
+  }
+  &:hover {
+    border: 2px solid #0054A6;
+  }
+}
+.slick-prev {
+  right: 56px;
+  &::after,
+  &::before {
+    transform-origin: left;
+  }
+  &::after {
+    top: 54%;
+    transform: rotate(-45deg);
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+}
+.slick-next {
+  right: 0;
+  &::after,
+  &::before {
+    transform-origin: right;
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+  &::before {
+    top: 54%;
+    transform: rotate(45deg);
+  }
+}
+.slick-disabled {
+  border: 2px solid #E8E8E9;
+  &::after, &::before {
+    background: #E8E8E9;
+  }
+}
+.goodFace__slider-bottom {
+  img {
+    width: 300px;
+    height: 206px;
+  }
+  margin-bottom: 56px;
+}
+.slider-bottom__item {
+  
+}
+.slider-bottom-text {
+  h2 {
+    font-weight: 500;
+    font-size: 32px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+.footer {
+}
+.footer__title {
+  font-size: 20px;
+  padding-right: 48px;
+  position: relative;
+  margin-bottom: 16px;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+  }
+  &::after {
+    height: 1px;
+    width: 474px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e8e8e9;
+  }
+  &::before {
+    background: url("../img/flagUkraine.svg") 0 0 no-repeat;
+    width: 24px;
+    height: 24px;
+    left: 198px;
+  }
+}
+.footer__text {
+  p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
