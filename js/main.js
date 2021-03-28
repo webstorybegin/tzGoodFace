@@ -2,7 +2,7 @@ $('.goodFace__slider-top').slick({
   asNavFor: '.goodFace__slider-bottom',
   slidesToShow: 3,
   focusOnSelect: true,
-  infinite: false
+  infinite: false,
 });
 
 $('.goodFace__slider-bottom').slick({

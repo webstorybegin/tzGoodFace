@@ -19,7 +19,6 @@
 .slick-track {
   display: flex;
 }
-
 .slider-top__item {
   img {
     margin: 8px 0;
@@ -46,15 +45,25 @@
   position: absolute;
   top: 8px;
   font-size: 0;
-  width: 58px;
+  width: 56px;
   height: 56px;
   background: #fff;
   transition: 0.3s ease 0s;
-  border: 2px solid $black;
+  &:not(.disabled-slick):hover {
+    border: 2px solid $blue;
+    z-index: 5;
+    &::after {
+      background: $blue;
+    }
+    &::before {
+      background: $blue;
+    }
+  }
 }
 .slick-prev,
 .slick-next {
   border: 2px solid $black;
+  z-index: 5;
   &::after,
   &::before {
     content: "";
@@ -64,13 +73,9 @@
     height: 3px;
     background: $black;
   }
-  &:hover {
-    border: 2px solid $blue;
-  }
 }
 .slick-prev {
-  z-index: 10 !important;
-  right: 56px;
+  right: 54px;
   &::after,
   &::before {
     transform-origin: left;
@@ -83,11 +88,12 @@
     transform: rotate(45deg);
   }
   &:hover {
-    border-left: 2px solid $blue;
+    
   }
 }
 .slick-next {
   right: 0;
+  z-index: 1;
   &::after,
   &::before {
     transform-origin: right;
@@ -100,17 +106,15 @@
     transform: rotate(45deg);
   }
   &:hover {
-    border-right: 2px solid $blue;
+    
   }
 }
 .disabled-slick {
   border: 2px solid $grey;
+  z-index: 1;
   &::after,
   &::before {
     background: $grey;
-  }
-  &:hover {
-    border: 2px solid $grey;
   }
 }
 .goodFace__slider-bottom {

@@ -54,10 +54,10 @@ ul,
 li {
   list-style: none;
 }
-
 img {
   vertical-align: top;
   cursor: pointer;
+  width: 100%;
 }
 h1,
 h2,
@@ -87,7 +87,7 @@ body {
 }
 
 .container {
-  max-width: 712px;
+  max-width: 715px;
   margin: 0 auto;
   padding: 0 10px;
 }
