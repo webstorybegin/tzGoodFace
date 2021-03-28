@@ -26,7 +26,6 @@ let sliderItem = document.querySelectorAll('.slider-bottom__item');
 let slickPrev = document.querySelector('.slick-prev');
 let slickNext = document.querySelector('.slick-next');
 
-
 $slickElement.on('init reInit afterChange', function (event, slick, currentSlide) {
   let index = (currentSlide ? currentSlide : 0) + 1;
   $counter.text(index + ' — ' + sliderItem.length);
