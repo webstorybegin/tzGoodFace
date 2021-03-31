@@ -7,7 +7,6 @@
   .goodFace__slider {
     padding: 70px 0 90px 0;
     position: relative;
-   
   }
   .goodFace__slider-top {
     position: absolute;
@@ -37,9 +36,7 @@
   .slideCounter {
     display: none;
   }
-  .footer {
-    padding-right: 48px;
-  }
+  
   .slider-bottom-text {
     padding-right: 48px;
   }
@@ -48,9 +45,7 @@
     display: block;
     bottom: 30px;
   }
-  .footer__title {
-    &::after {
-      padding-right: 48px;
-    }
+  .bottom {
+    max-width: 90%;
   }
 }

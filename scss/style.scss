@@ -173,10 +173,10 @@
 .footer .slideCounter {
   display: none;
 }
-.footer {
-  margin-top: 32px;
+.bottom {
+  margin-top: 55px;
 }
-.footer__title {
+.bottom__title {
   font-size: 20px;
   font-weight: 600;
   position: relative;
@@ -201,11 +201,12 @@
     left: 198px;
   }
 }
-.footer__text {
+.bottom__text {
   p {
     font-size: 16px;
     line-height: 26px;
   }
 }
+
 
 @import "./media.scss";
